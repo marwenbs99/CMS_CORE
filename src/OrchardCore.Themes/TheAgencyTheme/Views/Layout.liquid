@@ -25,10 +25,15 @@
             {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_tag: "alias:main-menu" %}
         </div>
     </nav>
+
     {% render_section "Header", required: false %}
-	{% render_section "Messages", required: false %}
-    {% render_section "Content" %}
+    {% render_section "Messages", required: false %}
+
+    <div class="content-wrapper flex-fill">
+        {% render_section "Content" %}
+    </div>
+
     {% render_section "Footer", required: false %}
-    {% resources type: "FootScript" %}
 </body>
+
 </html>

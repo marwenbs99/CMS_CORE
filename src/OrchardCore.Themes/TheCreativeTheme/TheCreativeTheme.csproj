@@ -12,6 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Recipies\**" />
+    <EmbeddedResource Remove="Recipies\**" />
+    <None Remove="Recipies\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="D:\GIT\OrchardCore\src\OrchardCore.Build\/nuget-icon.png" />
   </ItemGroup>
 
@@ -19,10 +25,6 @@
     <ProjectReference Include="..\..\OrchardCore\OrchardCore.Theme.Targets\OrchardCore.Theme.Targets.csproj" />
     <ProjectReference Include="..\..\OrchardCore\OrchardCore.DisplayManagement\OrchardCore.DisplayManagement.csproj" />
     <ProjectReference Include="..\..\OrchardCore\OrchardCore.ResourceManagement.Abstractions\OrchardCore.ResourceManagement.Abstractions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Recipies\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +42,11 @@
     <None Include="wwwroot\assets\img\portfolio\thumbnails\4.jpg" />
     <None Include="wwwroot\assets\img\portfolio\thumbnails\5.jpg" />
     <None Include="wwwroot\assets\img\portfolio\thumbnails\6.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
 </Project>
